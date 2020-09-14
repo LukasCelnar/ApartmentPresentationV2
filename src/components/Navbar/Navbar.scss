@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+
+.navbar {
+    display: flex;
+    align-items: center;
+
+    &__logo {
+        height: 9rem;
+        width: 9rem;
+        padding: 1.5rem;
+    }
+
+    &__buttons {
+        list-style: none;
+        display: flex;
+        margin-left: auto;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    &__button {
+        margin: 0 1.2rem;
+
+        &-link {
+            text-decoration: none;
+            color: $color-primary;
+        }
+    }
+
+    &__button-selected {
+        border-bottom: $color-primary solid 5px;
+    }
+}
