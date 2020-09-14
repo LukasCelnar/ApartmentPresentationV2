@@ -3,6 +3,11 @@
 .navbar {
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: $color-white;
+    width: 100%;
+    z-index: 99999;
 
     &__logo {
         height: 9rem;
@@ -23,7 +28,8 @@
 
         &-link {
             text-decoration: none;
-            color: $color-primary;
+            color: $color-black;
+            font-family: 'Roboto-Bold';
         }
     }
 

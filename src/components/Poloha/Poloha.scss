@@ -1,0 +1,59 @@
+@import '../../styles/variables.scss';
+
+.poloha {
+
+    margin-top: 6.5rem;
+    padding: 8rem 0;
+    background-color: $color-primary;
+    color: $color-white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Roboto-Regular';
+    clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
+
+    &__header {
+        font-size: 5rem;
+        font-family: 'Roboto-Medium';
+        padding: 2rem 0;
+    }
+
+    &__content {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    &__map {
+        width: 80%;
+        height: 70rem;
+        margin: 2rem 0 6rem 0;
+    }
+
+    &__second {
+
+        &-header {
+            font-size: 3rem;
+            font-family: 'Roboto-Medium';
+            padding: 2rem 0;
+        }
+
+        &-content {
+            display: flex;
+            justify-content: center;
+
+            &-item {
+                
+                padding: 0 2rem;
+
+                &-icon {
+                    font-size: 10rem;
+                }
+
+                &-header {
+                    font-size: 2.5rem;
+                    font-family: 'Roboto-Medium';
+                    padding: 1rem 0;
+                }
+            }
+        }
+    }
+}

@@ -3,10 +3,17 @@
 .info {
     //overflow-x: hidden;
 
+    &__header {
+        font-size: 4.5rem;
+        text-align: center;
+        font-family: 'Roboto-Regular';
+        padding: 2rem 0 1rem 0;
+    }
+
     &__content {
         display: flex;
         width: 90vw;
-        height: 40rem;
+        height: 47rem;
         justify-content: center;
         margin: 0 auto;
         align-items: center;
@@ -18,9 +25,13 @@
         background-color: $color-primary;
         color: $color-white;
 
+        &-header {
+            padding-top: 0.5rem;
+        }
+
         &-header, &-footer {
             text-align: center;
-            font-size: 2.8rem;
+            font-size: 3.3rem;
         }
 
         &-content {
@@ -32,8 +43,9 @@
             }
 
             &-left-column > div, &-right-column > div{
-                margin: 2rem 0;
-                font-size: 2rem;
+                margin: 2.3rem 0;
+                font-size: 2.3rem;
+                font-family: 'Roboto-Regular';
             }
 
             &-right-column {
@@ -43,7 +55,7 @@
     }
 
     &__img {
-        height: 80%;
+        height: 85%;
     }
 
 }
