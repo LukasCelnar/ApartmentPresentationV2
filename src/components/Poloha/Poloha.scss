@@ -10,6 +10,8 @@
     font-size: 2rem;
     font-family: 'Roboto-Regular';
     clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
+    -webkit-clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
+    box-shadow: 0 1rem 3rem rgba($color-black, .8);
 
     &__header {
         font-size: 5rem;
@@ -26,6 +28,7 @@
         width: 80%;
         height: 70rem;
         margin: 2rem 0 6rem 0;
+        box-shadow: 0 1rem 3rem rgba($color-black, .1);
     }
 
     &__second {
