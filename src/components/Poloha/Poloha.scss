@@ -9,8 +9,9 @@
     text-align: center;
     font-size: 2rem;
     font-family: 'Roboto-Regular';
-    clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
-    -webkit-clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
+    //clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
+    clip-path: polygon(0 10rem, 100% 0, 100% calc(100% - 10rem), 0% 100%);
+    clip-path: polygon(0 10rem, 100% 0, 100% calc(100% - 10rem), 0% 100%);
     box-shadow: 0 1rem 3rem rgba($color-black, .8);
 
     &__header {
