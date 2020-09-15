@@ -3,7 +3,7 @@ import './Kontakt.scss';
 
 const Kontakt = () => {
     return (
-        <div className='kontakt'>
+        <div className='kontakt' id='kontakt'>
             <div className='kontakt__content'>
                 <img className='kontakt__content-img' src='/imgs/profile.jpg' alt='profile' />
                 <div>

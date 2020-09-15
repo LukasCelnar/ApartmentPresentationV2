@@ -1,22 +1,26 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+import navbarLinks from './navbarLinks.json'
 import './Navbar.scss';
 
 const Navbar = () => {
     const [currentBtn, setCurrentBtn] = useState(0)
 
+    const scrollWidthOffset = (el) => {
+        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+        const yOffset = -90; 
+        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+    }
 
     const renderButtons = () => {
-        const items = ['info', 'poloha', 'video', 'karta', 'vizualizace', 'model', 'brožura', 'kontakt']
 
-        return items.map((item, i) => {
-            const linkPath = item === 'info' ? '/' : item === 'brožura' ? '/brozura' : `/${item}`
+        return navbarLinks.map((navLink, i) => {
             const buttonClass = `navbar__button ${i === currentBtn ? 'navbar__button-selected' : ''}`
 
             return (
                 <li key={i} onClick={() => setCurrentBtn(i)} className={buttonClass}>
-                    <Link to={linkPath} className='navbar__button-link'>
-                        {item}
+                    <Link to={navLink.to} scroll={scrollWidthOffset} className='navbar__button-link'>
+                        {navLink.name}
                     </Link>
                 </li>
             );

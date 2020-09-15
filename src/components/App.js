@@ -29,6 +29,9 @@ const App = () => {
 				<Route path='/karta' exact>
 					<Pdf pdfPath='/pdfs/karta.pdf'/>
 				</Route>
+				<Route path='/brozura' exact>
+					<Pdf pdfPath='/pdfs/brozura.pdf'/>
+				</Route>
 			</Switch>
 		</Router>
 	);

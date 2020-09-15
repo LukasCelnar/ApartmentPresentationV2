@@ -6,7 +6,7 @@ import './Poloha.scss';
 
 const Poloha = () => {
     return (
-        <div className='poloha'>
+        <div className='poloha' id='poloha'>
             <div className='poloha__header'>BRNO, TRNITÁ</div>
             <div className='poloha__content'>
                 Developerský projekt Palác Trnitá zaujme svoji jedinečnou polohou. Najdete jej v hlavní rozvojové zóně města Brna, 
