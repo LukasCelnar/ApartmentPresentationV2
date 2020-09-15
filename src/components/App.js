@@ -6,6 +6,7 @@ import Poloha from './Poloha/Poloha';
 import Video from './Video/Video';
 import Kontakt from './Kontakt/Kontakt';
 import Pdf from './Pdf/Pdf';
+import Vizualizace from './Vizualizace/Vizualizace';
 import './App.scss';
 
 // root route components combined together
@@ -32,6 +33,7 @@ const App = () => {
 				<Route path='/brozura' exact>
 					<Pdf pdfPath='/pdfs/brozura.pdf'/>
 				</Route>
+				<Route path='/vizualizace' exact component={Vizualizace} />
 			</Switch>
 		</Router>
 	);

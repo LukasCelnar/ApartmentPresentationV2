@@ -25,6 +25,7 @@
         background-color: $color-primary;
         color: $color-white;
         box-shadow: 0 1rem 3rem rgba($color-black, .3);
+        animation: moveDown 0.7s ease-out;
 
         &-header {
             padding-top: 0.5rem;
@@ -59,6 +60,33 @@
         height: 85%;
 
         box-shadow: 0 1rem 3rem rgba($color-black, .3);
+        animation: moveUp 0.7s ease-out;
     }
+
+    /*
+    @keyframes moveDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-5rem);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes moveUp {
+        0% {
+            opacity: 0;
+            transform: translateY(5rem);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    */
 
 }
