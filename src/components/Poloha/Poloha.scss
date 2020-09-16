@@ -8,7 +8,7 @@
     color: $color-white;
     text-align: center;
     font-size: 2rem;
-    font-family: 'Roboto-Regular';
+    font-family: $font-regular;
     //clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
     clip-path: polygon(0 10rem, 100% 0, 100% calc(100% - 10rem), 0% 100%);
     clip-path: polygon(0 10rem, 100% 0, 100% calc(100% - 10rem), 0% 100%);
@@ -16,7 +16,7 @@
 
     &__header {
         font-size: 5rem;
-        font-family: 'Roboto-Medium';
+        font-family: $font-medium;
         padding: 2rem 0;
     }
 
@@ -36,7 +36,7 @@
 
         &-header {
             font-size: 3rem;
-            font-family: 'Roboto-Medium';
+            font-family: $font-medium;
             padding: 2rem 0;
         }
 
@@ -54,7 +54,7 @@
 
                 &-header {
                     font-size: 2.5rem;
-                    font-family: 'Roboto-Medium';
+                    font-family: $font-medium;
                     padding: 1rem 0;
                 }
             }
