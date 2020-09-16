@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+
+.vizualizace {
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50%));
+    grid-template-rows: repeat(10, 1fr);
+    text-align: center;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    padding: 1rem 10rem;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        
+
+        object-fit: cover;
+        
+    }
+
+    &__header-1, &__header-2 {
+        background-color: $color-primary;
+        color: $color-white;
+        font-size: 3rem;
+    }
+
+    &__header-1 > div, &__header-2 > div {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__div {
+        &-1 { grid-area: 1 / 1 / 4 / 2; }
+        &-2 { grid-area: 1 / 2 / 2 / 3; }
+        &-3 { grid-area: 2 / 2 / 5 / 3; }
+        &-4 { grid-area: 4 / 1 / 7 / 2; }
+        &-5 { grid-area: 5 / 2 / 8 / 3; }
+        &-6 { grid-area: 7 / 1 / 8 / 2; }
+        &-7 { grid-area: 8 / 1 / 11 / 2; }
+        &-8 { grid-area: 8 / 2 / 11 / 3; }
+    }
+}
+
+[class^="vizualizace__div"] {
+    height: 100%;
+
+    & > img {
+        transition: 0.3s all;
+
+        &:hover {
+            transform: scale(1.01);
+            cursor: pointer;
+        }
+    }
+}
