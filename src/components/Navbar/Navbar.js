@@ -5,12 +5,15 @@ import './Navbar.scss';
 
 const Navbar = () => {
     const [currentBtn, setCurrentBtn] = useState(0)
+    const [showHamburgerList, setShowHamburgetList] = useState(false)
 
     const scrollWidthOffset = (el) => {
         const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
         const yOffset = -90; 
         window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
     }
+
+    console.log(showHamburgerList)
 
     const renderButtons = () => {
 
@@ -30,9 +33,15 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <img className='navbar__logo' src='/imgs/logo.jpg' alt='logo' />
-            <ul className='navbar__buttons'>
+            <div className='navbar__hamburger' onClick={() => setShowHamburgetList(!showHamburgerList)}>
+                <div className='navbar__hamburger-bar'></div>
+                <div className='navbar__hamburger-bar navbar__hamburger-bar-mid'></div>
+                <div className='navbar__hamburger-bar'></div>
+            </div>
+            <ul className={`navbar__buttons ${showHamburgerList ? 'navbar__hamburger-items-activate' : ''}`}>
                 {renderButtons()}
             </ul>
+            <div className={`navbar__hamburger-items ${showHamburgerList ? 'navbar__hamburger-items-activate' : ''}`}></div>
         </div>
     );
 };

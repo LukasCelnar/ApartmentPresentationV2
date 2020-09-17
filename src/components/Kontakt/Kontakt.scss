@@ -38,3 +38,55 @@
         }
     }
 }
+
+@media (max-width: 650px) {
+    .kontakt {
+        clip-path: polygon(0 5rem, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 5rem, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+@media (max-width: 550px) {
+    .kontakt {
+        &__copyright {
+            font-size: 1.8rem;
+        }
+    
+        &__content {
+            font-size: 1.85rem;
+    
+            &-img {
+                height: 13rem;
+            }
+    
+            &-header {
+                font-size: 3.2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .kontakt {
+        padding: 7rem 0 1rem 0;
+
+        &__copyright {
+            font-size: 1.8rem;
+            padding-top: 3.5rem;
+        }
+    
+        &__content {
+            display: block;
+            font-size: 2rem;
+    
+            &-img {
+                height: 13rem;
+                margin: 0;
+            }
+    
+            &-header {
+                font-size: 3.3rem;
+            }
+        }
+    }
+}
