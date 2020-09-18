@@ -13,8 +13,6 @@ const Navbar = () => {
         window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
     }
 
-    console.log(showHamburgerList)
-
     const renderButtons = () => {
 
         return navbarLinks.map((navLink, i) => {

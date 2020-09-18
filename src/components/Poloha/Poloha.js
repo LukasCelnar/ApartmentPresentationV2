@@ -26,7 +26,7 @@ const Poloha = () => {
                     </div>
                 </div>
                 <div className='poloha__second-content-item'>
-                    <GpsIcon style={{fontSize: 100}} />
+                    <GpsIcon className='poloha__second-content-item-icon' style={{fontSize: 100}} />
                     <div className='poloha__second-content-item-header'>MHD</div>
                     <div className='poloha__second-content-item-path'>
                         Zastávka Opuštěná,
@@ -37,7 +37,7 @@ const Poloha = () => {
                     </div>
                 </div>
                 <div className='poloha__second-content-item'>
-                    <EmailIcon style={{fontSize: 100}} />
+                    <EmailIcon className='poloha__second-content-item-icon' style={{fontSize: 100}} />
                     <div className='poloha__second-content-item-header'>GPS</div>
                     <div className='poloha__second-content-item-path'>
                         49°11'12.4" N
@@ -46,7 +46,7 @@ const Poloha = () => {
                     </div>
                 </div>
             </div>
-            <iframe className='poloha__map' src='https://www.google.com/maps/d/embed?mid=1AbxI63PGclSRzRPDt-gddSE3aZGTFxDO&amp;z=15' title='map' frameborder='0'></iframe>
+            <iframe className='poloha__map' src='https://www.google.com/maps/d/embed?mid=1AbxI63PGclSRzRPDt-gddSE3aZGTFxDO&amp;z=15' title='map' frameBorder='0'></iframe>
         </div>
     );
 };

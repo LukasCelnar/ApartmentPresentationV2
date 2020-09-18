@@ -39,10 +39,17 @@
     }
 }
 
+@media (max-width: 1400px) {
+    .kontakt {
+        clip-path: polygon(0 7.5rem, 100% 0, 100% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0 7.5rem, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
 @media (max-width: 650px) {
     .kontakt {
         clip-path: polygon(0 5rem, 100% 0, 100% 100%, 0% 100%);
-        clip-path: polygon(0 5rem, 100% 0, 100% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0 5rem, 100% 0, 100% 100%, 0% 100%);
     }
 }
 

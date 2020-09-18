@@ -12,7 +12,7 @@
 
     &__content {
         display: flex;
-        width: 90vw;
+        //width: 90vw;
         height: 47rem;
         justify-content: center;
         margin: 0 auto;
@@ -117,6 +117,12 @@
         &__content {
             transform: scale(0.7);
         }
+        
+        &__header {
+            font-size: 3.5rem;
+            padding-bottom: 0;
+            transform: translateY(5rem);
+        }
     }
 }
 
@@ -166,6 +172,10 @@
             width: 100%;
             min-width: 0;
             box-shadow: 0 0 0 0;
+        }
+
+        &__header {
+            transform: translateY(0);
         }
     }
 }
