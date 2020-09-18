@@ -69,6 +69,12 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .poloha {
+        margin-top: 2rem;
+    }
+}
+
 @media (max-width: 900px) {
     .poloha {
         &__content {
@@ -79,11 +85,10 @@
  
 @media (max-width: 650px) {
     .poloha {
-        margin-top: 6.5rem;
         padding: 8rem 0;
         font-size: 1.8rem;
-        clip-path: polygon(0 5rem, 100% 0, 100% calc(100% - 5rem), 0% 100%);
-        -webkit-clip-path: polygon(0 5rem, 100% 0, 100% calc(100% - 5rem), 0% 100%);
+        clip-path: polygon(0 4rem, 100% 0, 100% calc(100% - 4rem), 0% 100%);
+        -webkit-clip-path: polygon(0 4rem, 100% 0, 100% calc(100% - 4rem), 0% 100%);
 
         &__content {
             font-size: 1.6rem;
