@@ -20,7 +20,7 @@ const Navbar = () => {
 
             return (
                 <li key={i} onClick={() => setCurrentBtn(i)} className={buttonClass}>
-                    <Link to={navLink.to} scroll={scrollWidthOffset} className='navbar__button-link'>
+                    <Link to={navLink.to} scroll={scrollWidthOffset} onClick={() => setShowHamburgetList(false)} className='navbar__button-link'>
                         {navLink.name}
                     </Link>
                 </li>
