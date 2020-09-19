@@ -22,7 +22,7 @@ const Info = () => {
                         <div className='info__specs-content-right-column' style={{width: '35%'}}>
                             <div>8.NP a 9.NP</div>
                             <div>106,6 m²</div>
-                            <div>119,80 m²</div>
+                            <div>119,8 m²</div>
                             <div>31,4 m²</div>
                             <div>20,3 m²</div>
                             <div>Ano</div>
