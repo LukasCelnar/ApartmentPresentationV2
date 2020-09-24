@@ -4,7 +4,7 @@ import './Info.scss';
 const Info = () => {
     return (
         <div className='info' id='info'>
-           <div className='info__header'>PALÁC TRNITÁ - STŘEŠNÍ BYT B6/08.04</div>
+           <div className='info__header'>PALÁC TRNITÁ - STŘEŠNÍ BYT (B6/08.04)</div>
            <div className='info__content'>
                 <img className='info__img info__img-left' alt='main-picutre1' src='/imgs/main1.jpg'/>
                 <div className='info__specs'>
