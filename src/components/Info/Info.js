@@ -16,9 +16,9 @@ const Info = () => {
                             <div>Celková plocha</div>
                             <div>Balkon</div>
                             <div>Terasa</div>
-                            <div>Sklepní koje</div>
+                            <div>Sklepní kóje</div>
                             <div>Garážové stání</div>
-                            <div>Nastěhování</div>
+                            <div>K nastěhování</div>
                         </div>
                         <div className='info__specs-content-right-column' style={{width: '35%'}}>
                             <div>8.NP a 9.NP</div>
