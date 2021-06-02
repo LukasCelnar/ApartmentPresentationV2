@@ -29,7 +29,7 @@ const Info = () => {
                             <div>Podzim 2022</div>
                         </div>
                     </div>
-                    <div className='info__specs-footer'>8 599 000 Kč</div>
+                    <div className='info__specs-footer'>8 699 000 Kč</div>
                 </div>
                 <img className='info__img info__img-right' alt='main-picture2' src='/imgs/main2.jpg'/>
            </div>
