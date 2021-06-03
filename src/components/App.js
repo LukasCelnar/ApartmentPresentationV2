@@ -26,9 +26,10 @@ const App = () => {
 		<Router>
 			<Navbar />
 			<Switch>
-				<Route path='/'>
-					<Redirect to="https://trnita.netlify.app/" />
-				</Route>
+				<Route path='/' component={() => { 
+     					window.location.href = 'https://trnita.netlify.app/'; 
+     					return null;
+				}}/>
 				<Route path='/' exact component={MainPage} />
 				<Route path='/karta' exact>
 					<Pdf pdfPath='/pdfs/karta.pdf'/>
