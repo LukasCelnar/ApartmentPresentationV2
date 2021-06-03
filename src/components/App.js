@@ -27,7 +27,7 @@ const App = () => {
 			<Navbar />
 			<Switch>
 				<Route path='/' component={() => { 
-     					window.location.href = 'https://trnita.netlify.app/'; 
+     					window.location.href = 'https://trnita.netlify.app/B60804'; 
      					return null;
 				}}/>
 				<Route path='/' exact component={MainPage} />
