@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import Navbar from './Navbar/Navbar';
 import Info from './Info/Info';
 import Poloha from './Poloha/Poloha';
@@ -26,6 +26,9 @@ const App = () => {
 		<Router>
 			<Navbar />
 			<Switch>
+				<Route path='/'>
+					<Redirect to="https://trnita.netlify.app/" />
+				</Route>
 				<Route path='/' exact component={MainPage} />
 				<Route path='/karta' exact>
 					<Pdf pdfPath='/pdfs/karta.pdf'/>
